@@ -2,7 +2,7 @@
 #include <Python.h>
 
 // define NO_IMPORT_ARRAY and PYARRAY_UNIQUE_SYMBOL required for import_array to be
-// called in anoter compilation unit
+// called in another compilation unit
 #define NO_IMPORT_ARRAY
 #define PY_ARRAY_UNIQUE_SYMBOL c_ndarray_slice_ARRAY_API
 
