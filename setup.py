@@ -11,7 +11,7 @@ c_ndarray_slice_module = Extension(
 setup(
     name="slice",
     version="0.1.0",
-    description="Python Distribution Utilities",
+    description="Python ndarray slice function using NumPy C-API",
     author="Ian Harris",
     ext_modules=[c_ndarray_slice_module],
 )
