@@ -15,7 +15,6 @@ PyObject *slice(PyObject *dummy, PyObject *args, PyObject *kwds)
 {
   // declare variables
   PyObject *array;
-  PyArray_Descr *array_descr;
   int start_index, end_index, axis;
   int num_array_dims;
   char *keyword_names[] = {"", "", "", "axis", NULL};
@@ -46,9 +45,6 @@ PyObject *slice(PyObject *dummy, PyObject *args, PyObject *kwds)
 
   // get the strides of the array
   array_strides = PyArray_STRIDES(array);
-
-  // get a reference to the array description
-  array_descr = PyArray_DESCR(array);
 
   // enforce certain values for axis
   if(axis >= num_array_dims || axis < -num_array_dims) {
