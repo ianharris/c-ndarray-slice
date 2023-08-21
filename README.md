@@ -14,5 +14,5 @@ Requires requires Python packages numpy and pytest to be installed.
 
 ## Testing
 
-Install the package; ideally in a virtual environment using `make install` and then run
+Install the package (ideally in a virtual environment) using `make install` and then run
 the tests using `make test`.
