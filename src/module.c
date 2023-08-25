@@ -11,7 +11,7 @@
 
 // initialize the PyMethodDef for the module
 static PyMethodDef CNdarraySliceMethods[] = {
-  {"c_ndarray_slice", slice, METH_VARARGS|METH_KEYWORDS, "Slice an array in C"},
+  {"c_ndarray_slice", slice, METH_VARARGS, "Slice an array in C"},
   {NULL, NULL, 0, NULL}  // Sentinel
 };
 
